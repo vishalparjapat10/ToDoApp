@@ -1,9 +1,18 @@
 import React, { Component } from 'react'
 
-export default class Todo extends Component {
+export default class 
+ extends Component {
   render() {
     return (
-      <div>Todo</div>
+      <div>
+        <div>
+            <h1>ToDo</h1>
+        </div>
+        <div>
+          <input type="text" />
+          <button>Submit</button>
+        </div>
+      </div>
     )
   }
 }
