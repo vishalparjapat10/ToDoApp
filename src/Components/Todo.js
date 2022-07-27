@@ -5,9 +5,7 @@ export default class
     constructor(){
         super();
         this.state = {
-            tasks:[
-              {id:1,task:"React"},
-            ],
+            tasks:[],
             curTask:""
           };
     }
@@ -23,6 +21,12 @@ export default class
             curTask:""
         })
     }
+    handleDeleteTask = (id) =>{
+      let updatedTasks = this.state.tasks.filter((taskObj) => taskObj.id != id);
+      this.setState({
+        tasks: [...updatedTasks]
+      });
+    }
   render() {
     return (
       <div className='todo-cont'>
@@ -35,6 +39,9 @@ export default class
         </div>
         <div className='todo-lists'>
             {
+              this.state.tasks.length == 0 ?
+              <h1 style={{textAlign:"center"}}>List is Empty!<br></br>Please Add Tasks</h1>
+              :
                 this.state.tasks.map((taskObj) => (
                     <li key={taskObj.id} className='todo-list'>
                         <h2>{taskObj.task}</h2>
