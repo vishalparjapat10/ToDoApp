@@ -40,7 +40,10 @@ export default class
         <div className='todo-lists'>
             {
               this.state.tasks.length == 0 ?
-              <h1 style={{textAlign:"center"}}>List is Empty!<br></br>Please Add Tasks</h1>
+              <div className='empty-head'>
+                <h1 style={{textAlign:"center"}}>List is Empty!<br></br>Please Add Tasks</h1>
+              </div>
+              
               :
                 this.state.tasks.map((taskObj) => (
                     <li key={taskObj.id} className='todo-list'>

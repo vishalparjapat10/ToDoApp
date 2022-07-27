@@ -92,3 +92,36 @@ body{
   background-color: #404344;
 
 }
+
+@media screen and
+(max-width:400px){
+  .todo-navbar{
+    width: 100%;
+    
+  }
+  .submit-btn{
+    text-align: center;
+  }
+  .empty-head{
+    text-align: center;
+  }
+  .todo-input>input{
+    font-size: 1.2rem;
+    width: 90%;
+  }
+  .submit-btn{
+    font-size: 15px;
+    padding: 4px;
+    padding-bottom: 4px;
+    width: 92%;
+  }
+  .empty-head>h1{
+    font-size: 1.2rem;
+  }
+  .todo-list>button{
+    font-size: 15px;
+    margin-left: 11px;
+    width: 18%;
+  }
+  
+}
