@@ -36,3 +36,54 @@
     transform: rotate(360deg);
   }
 }
+
+body{
+  background-color: #F2F2F4;
+  margin: 0;
+}
+.todo-navbar{
+  background-color: #404344;
+  text-align: center;
+}
+.todo-input{
+  text-align: center;
+}
+.todo-input>input{
+  font-size: 2rem;
+}
+.submit-btn{
+  font-size: 20px;
+  padding: 12px;
+  padding-bottom: 4px;
+  text-align: center;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.submit-btn:hover{
+  background-color: #404344;
+}
+.todo-lists{
+  margin-top: 28px;
+}
+.todo-list{
+  background-color: #ED6436;
+  border: 1px solid black;
+  list-style: none;
+  padding-bottom: 24px;
+}
+.todo-list>button{
+  font-size: 17px;
+  padding: 0px;
+  margin-left: 4px;
+  /* padding-bottom: 4px; */
+  text-align: center;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  width: 6%;
+  height: 40px;
+}
+.todo-list>button:hover{
+  background-color: #404344;
+
+}

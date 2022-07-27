@@ -25,18 +25,18 @@ export default class
     }
   render() {
     return (
-      <div>
-        <div>
+      <div className='todo-cont'>
+        <div className='todo-navbar'>
             <h1>ToDo</h1>
         </div>
-        <div>
-          <input type="text" value={this.state.curTask} onChange={this.handleChange}/>
-          <button onClick={this.handleSubmit}>Submit</button>
+        <div className='todo-input'>
+          <input type="text" className = 'input-todo' value={this.state.curTask} onChange={this.handleChange}/>
+          <button className='submit-btn' onClick={this.handleSubmit}>Submit</button>
         </div>
-        <div>
+        <div className='todo-lists'>
             {
                 this.state.tasks.map((taskObj) => (
-                    <li key={taskObj.id}>
+                    <li key={taskObj.id} className='todo-list'>
                         <h2>{taskObj.task}</h2>
                         <button onClick={() => {this.handleDeleteTask(taskObj.id)}}>Delete</button>
                     </li>
