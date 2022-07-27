@@ -94,6 +94,25 @@ body{
 }
 
 @media screen and
+(max-width:1000px){
+  
+  .todo-list>button{
+    font-size: 14px;
+    margin-left: 13px;
+    width: 8%;
+  }
+}
+
+@media screen and
+(max-width:500px){
+  
+  .todo-list>button{
+    font-size: 14px;
+    margin-left: 13px;
+    width: 14%;
+  }
+}
+@media screen and
 (max-width:400px){
   .todo-navbar{
     width: 100%;
